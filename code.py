@@ -22,10 +22,10 @@ ns_pin_4 = digitalio.DigitalInOut(board.D3)
 ns_pin_4.switch_to_input(pull=digitalio.Pull.DOWN)
 
 # !IMPORTANT! This is the SD Card pin (change this accordingly) Use any pin that is not taken by SPI -------------------------------------------------------------------------!
-SD_CS = board.D10
+SD_CS = board.D9
 
 # !IMPORTANT! These are the SPI Flash pins that will be used for bitflip detection (change these accordingly) ------------------------------------------------------!
-bit = board.D8
+bit = board.D7
 
 # Create instances of the Radiation class for both geiger counters
 rad_1 = Radiation(sensor_pin_1, ns_pin_1)
